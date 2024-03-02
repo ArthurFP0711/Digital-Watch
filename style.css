@@ -171,12 +171,16 @@ body{
 @media(max-width:762px){
     #watch{
         width: 270px;
+        transition: 0.1s all;
     }
     #stopwatch{
         width: 310px;
+        transition: 0.1s all;
+        
     }
 
     .btns{
         margin-left: 0px;
     }
+    
 }
