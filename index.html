@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+<div class="box-container">
+    <div class="container" >
+        <div class="watch" id="watch">
+            <div class="space">
+                <div class="txts">
+                    <span id="horas">09</span>
+                <p>Horas</p>
+                </div>
+            </div>
+            <div class="space">
+                <div class="txts">
+                    <span id="minutos">04</span>
+                    <p>Minutos</p>
+                </div>    
+            </div>
+            <div class="space">
+                <div class="txts">
+                    <span id="segundos">23</span>
+                    <p>Segundos</p>
+                </div>    
+            </div>
+        </div>
+    <div class="btns">
+        <button>
+            <ion-icon class="icon" id="watch-btn" name="alarm"></ion-icon>
+        </button>
+        <button>
+            <ion-icon class="icon" id="showstop" name="stopwatch">
+            </ion-icon>
+        </button>
+        <button>
+            <ion-icon class="icon" name="hourglass">
+            </ion-icon>
+        </button>
+    </div>
+    </div>
+    <div class="stopwatch" id="stopwatch">
+        <div class="showtime">
+            
+            <span id="hora">00</span>
+            <span>:</span>
+            <span id="minuto">00</span>
+            <span>:</span>
+            <span id="segundo">00</span>
+        </div>
+        <div class="stpbtns" >
+            <ion-icon class="stopwatchbtn" id="startbtn" name="play-circle" onclick="start()"></ion-icon>
+            <ion-icon onclick='pause()' class="stopwatchbtn" name="pause-circle"></ion-icon>
+            <ion-icon onclick="clearTimer()" class="stopwatchbtn" id='clear'name="square"></ion-icon>
+
+        </div>
+    </div>
+</div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
